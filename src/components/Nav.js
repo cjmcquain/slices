@@ -1,9 +1,14 @@
 import React from 'react';
 import { Link, navigate } from 'gatsby';
 import styled from 'styled-components';
+import Logo from './Logo';
 
 const NavStyles = styled.nav`
   margin-bottom: 3rem;
+
+  .logo {
+    transform: translateY(-25%);
+  }
 
   ul {
     margin: 0;
@@ -59,7 +64,9 @@ export default function Nav() {
           <Link to="/pizzas">Pizza Menu</Link>
         </li>
         <li>
-          <Link to="/">LOGO</Link>
+          <Link to="/">
+            <Logo />
+          </Link>
         </li>
         <li>
           <Link to="/slicemasters">SliceMasters</Link>
